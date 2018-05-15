@@ -1,2 +1,3 @@
 name: Qianru's Homepage
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
