@@ -1,43 +1,70 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+body{
+	font-size:16px;
+	line-height:1.6;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+.container{
+  padding-left: 100px;
+  padding-right: 15px;
+  min-width: 1170px;
+  margin-right:auto;
+  margin-left:auto
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+.logo-image { max-width:75%; height:auto; overflow:hidden;}
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+.abstract-text { color: #606060; }
 
-ul.posts li {
-    list-style: none;
+li {list-style-type:none;}
+
+ .media{
+	 border-left: 6px #D26900 solid;
+ }
+ .media-body{
+	 padding-left:20px;
+ }
+.projectheader{
+	text-align:center;
+}
+.projectimg{
+	text-align:center;
+}
+.projectimg img{
+	width: 100%;
+}
+.researchInt{
+	 padding-top: 10px;
+}
+.researchInt ul li{
+	 list-style-type:disc;
+	 line-height:30px;
+}
+.award ul li{
+	 list-style-type:disc;
+	 line-height:30px;
+}
+.news ul li{
+	 font-size:16px;
+	 list-style-type:none;
+	 line-height:30px;
+	 padding:0;
+	 margin:0;
+}
+.news ul{
+	margin:0px;
+	padding:0px;
+}
+.fa-flag{
+	color:#FF2D2D;
+	padding-right:10px;
+}
+.photo{
+	float:left;
+	width:100%;
+	padding-top:10px;
+}
+.photo img{
+	width: 95%;
+}
+.introduction{
+	float:right;
+	width:80%;
 }
