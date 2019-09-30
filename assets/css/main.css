@@ -22,10 +22,10 @@ li {list-style-type:none;}
 	 padding-left:20px;
  }
 .projectheader{
-	text-align:justify;
+	text-align:left;
 }
 .projectimg{
-	text-align:justify;
+	text-align:left;
 }
 .projectimg img{
 	width: 100%;
