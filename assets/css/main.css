@@ -59,10 +59,10 @@ li {list-style-type:none;}
 .photo{
 	float:left;
 	width:100%;
-	padding-top:10px;
+	padding-top:20px;
 }
 .photo img{
-	width: 95%;
+	width: 80%;
 }
 .introduction{
 	float:right;
