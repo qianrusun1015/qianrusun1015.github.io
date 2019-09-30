@@ -1,3 +1,13 @@
-name: Qianru's Homepage
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+
+title: Yunchao Wei
+
+
+#sidebar links
+email: wychao1987 AT gmail DOT com
+phone: 012 345 6789
+website: Google Scholar #do not add http://
+linkedin: alandoe
+github: sharu725
+twitter: '@webjeda'
+port: 4001
+#Update all the sections by editing the files inside _includes folder.
