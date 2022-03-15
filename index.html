@@ -512,7 +512,7 @@
 							</td>
 							<td width="75%" valign="middle">
 								<strong>Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation </strong> <br>
-								Zhaozheng Chen, Tan Wang, Xian-Sheng Hua, Hanwang Zhang, <strong>Qianru Sun</strong> <br>
+								Zhaozheng Chen, Tan Wang, Xiongwei Wu, Xian-Sheng Hua, Hanwang Zhang, <strong>Qianru Sun</strong> <br>
 								2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR '22. <br>
 								<a href="https://arxiv.org/pdf/2203.00962">[paper]</a> <a href="https://github.com/zhaozhengChen/ReCAM">[code]</a>
 								<p> </p>
@@ -530,7 +530,7 @@
 								The 36th AAAI Conference on Artificial Intelligence, AAAI '22. (15%) <br />
 								<a href="https://arxiv.org/abs/2112.15324">[paper]</a>
 								<a href="https://github.com/JianqiangH/Deconfounded_VG ">[code]</a>
-								<p>We focus on the confounding bias between language and location in the visual grounding pipeline, where we find that the bias is the major visual reasoning bottleneck. For example, the grounding process is usually a trivial languagelocation association without visual reasoning, e.g., grounding any language query containing sheep to the nearly central regions, due to that most queries about sheep have groundtruth locations at the image center. First, we frame the visual grounding pipeline into a causal graph, which shows the causalities among image, query, target location and underlying confounder. Through the causal graph, we know how to break the grounding bottleneck: deconfounded visual grounding. Second, to tackle the challenge that the confounder is unobserved in general, we propose a confounder-agnostic approach called: Referring Expression Deconfounder (RED), to remove the confounding bias. Third, we implement RED as a simple language attention, which can be applied in any grounding method. On popular benchmarks, RED improves various state-of-the-art grounding methods by a significant margin. </p>
+								<p>We focus on the confounding bias between language and location in the visual grounding pipeline, where we find that the bias is the major visual reasoning bottleneck. For example, the grounding process is usually a trivial languagelocation association without visual reasoning, e.g., grounding any language query containing sheep to the nearly central regions, due to that most queries about sheep have groundtruth locations at the image center. First, we frame the visual grounding pipeline into a causal graph, which shows the causalities among image, query, target location and underlying confounder. Through the causal graph, we know how to break the grounding bottleneck: deconfounded visual grounding. Second, to tackle the challenge that the confounder is unobserved in general, we propose a confounder-agnostic approach called: Referring Expression Deconfounder (RED), to remove the confounding bias. Third, we implement RED as a simple language attention, which can be applied in any grounding method. </p>
 							</td>
 						</tr>
 
@@ -550,7 +550,7 @@
 								2021 Conference on Neural Information Processing Systems, NeurIPS '21. (Spotlight Presentation, 3%) <br />
 								<a href="https://arxiv.org/abs/2110.15255">[paper]</a>
 								<a href="https://github.com/Wangt-CN/IP-IRM">[code]</a>
-								<p> We presented an unsupervised disentangled representation learning method called IP-IRM, based on Self-Supervised Learning (SSL). IP-IRM iteratively partitions the dataset into semantic-related subsets, and learns a representation invariant across the subsets using SSL with an IRM loss. </p>
+								<p> A good visual representation is an inference map from observations (images) to features (vectors) that faithfully reflects the hidden modularized generative factors (semantics). In this paper, we formulate the notion of "good" representation from a group-theoretic view using Higgins' definition of disentangled representation, and show that existing Self-Supervised Learning (SSL) only disentangles simple augmentation features such as rotation and colorization, thus unable to modularize the remaining semantics. To break the limitation, we propose an iterative SSL algorithm: Iterative Partition-based Invariant Risk Minimization (IP-IRM), which successfully grounds the abstract semantics and the group acting on them into concrete contrastive learning. At each iteration, IP-IRM first partitions the training samples into two subsets that correspond to an entangled group element. Then, it minimizes a subset-invariant contrastive loss, where the invariance guarantees to disentangle the group element. We prove that IP-IRM converges to a fully disentangled representation and show its effectiveness on various benchmarks. </p>
 							</td>
 						</tr>
 
