@@ -577,9 +577,7 @@
 									applying it to target tasks. RMM propagates two levels of actions: Level-1 determines how to split the memory between old and new classes, and Level-2
 									allocates memory for each specific class. In essence, it is an optimizable and
 									general method for memory management that can be used in any replaying-based
-									CIL method. For evaluation, we plug RMM into two top-performing baselines
-									(LUCIR+AANets and POD+AANets [30]) and conduct experiments on three
-									benchmarks (CIFAR-100, ImageNet-Subset, and ImageNet-Full) </p>
+									CIL method. </p>
 							</td>
 						</tr>
 
@@ -593,7 +591,7 @@
 								International Conference on Computer Vision, ICCV '21. <br />
 								<a href="https://arxiv.org/pdf/2108.08782">[paper]</a>
 								<a href="https://github.com/Wangt-CN/CaaM">[code]</a>
-								<p>We propose a causal attention module (CaaM) that self-annotates the confounders in unsupervised fashion. In particular, multiple CaaMs can be stacked and integrated in conventional attention CNN and self-attention Vision Transformer.</p>
+								<p>Attention module does not always help deep models learn causal features that are robust in any confounding context, e.g., a foreground object feature is invariant to different backgrounds. This is because the confounders trick the attention to capture spurious correlations that benefit the prediction when the training and testing data are IID; while harm the prediction when the data are OOD. The sole fundamental solution to learn causal attention is by causal intervention, which requires additional annotations of the confounders, e.g., a "dog" model is learned within  "grass+dog" and "road+dog" respectively, so the "grass" and "road" contexts will no longer confound the "dog" recognition. However, such annotation is not only prohibitively expensive, but also inherently problematic, as the confounders are elusive in nature. In this paper, we propose a causal attention module (CaaM) that  self-annotates the confounders in unsupervised fashion. In particular, multiple CaaMs can be stacked and integrated in conventional attention CNN and self-attention Vision Transformer. In OOD settings, deep models with CaaM outperform those without it significantly; even in IID settings, the attention localization is also improved by CaaM, showing a great potential in applications that require robust visual saliency.</p>
 							</td>
 						</tr>
 
