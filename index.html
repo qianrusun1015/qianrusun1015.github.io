@@ -526,7 +526,7 @@
 								<strong>Class Is Invariant to Context and Vice Versa: On Learning Invariance for Out-Of-Distribution Generalization </strong> <br>
 								Jiaxin Qi, Kaihua Tang, <strong>Qianru Sun</strong>, Xian-Sheng Hua, Hanwang Zhang <br>
 								European Conference on Computer Vision 2022, ECCV '22. <br>
-								<a href=" ">[paper]</a> <a href=" ">[code]</a>
+								<a href=" ">[paper]</a> <a href=" ">[code]</a> <a href=" ">[appendix]</a>
 								<p> </p>
 								<p> Out-Of-Distribution generalization (OOD) is all about learning invariance against environmental changes. If the context in every class is evenly distributed, OOD would be trivial because the context can be easily removed due to an underlying principle: class is invariant to context. However, collecting such a balanced dataset is impractical. Learning on imbalanced data makes the model bias to context and thus hurts OOD. Therefore, the key to OOD is context balance.We argue that the widely adopted assumption in prior work—the context bias can be directly annotated or estimated from biased class prediction—renders the context incomplete or even incorrect. In contrast, we point out the everoverlooked other side of the above principle: context is also invariant to class, which motivates us to consider the classes (which are already labeled) as the varying environments to resolve context bias (without context labels). We implement this idea by minimizing the contrastive loss of intra-class sample similarity while assuring this similarity to be invariant across all classes. On benchmarks with various context biases and domain gaps, we show that a simple re-weighting based classifier equipped with our context estimation achieves state-of-the-art performance. We provide theoretical justifications and source code in Appendix. </p>
 							</td>
@@ -540,7 +540,7 @@
 								<strong>Equivariance and Invariance Inductive Bias for Learning from Insufficient Data </strong> <br>
 								Tan Wang, <strong>Qianru Sun</strong>, Sugiri Pranata, Karlekar Jayashree, Hanwang Zhang <br>
 								European Conference on Computer Vision 2022, ECCV '22. <br>
-								<a href=" ">[paper]</a> <a href=" ">[code]</a>
+								<a href=" ">[paper]</a> <a href=" ">[code]</a> <a href=" ">[appendix]</a>
 								<p> </p>
 								<p> We are interested in learning robust models from insufficient data, without the need for any externally pre-trained model checkpoints. First, compared to sufficient data, we show why insufficient data renders the model more easily biased to the limited training environments that are usually different from testing. For example, if all the training "swan" samples are "white", the model may wrongly use the "white" environment to represent the intrinsic class "swan". Then, we justify that equivariance inductive bias can retain the class feature while invariance inductive bias can remove the environmental feature, leaving only the class feature that generalizes to any testing environmental changes. To impose them on learning, for equivariance, we demonstrate that any off-the-shelf contrastive-based self-supervised feature learning method can be deployed; for invariance, we propose a class-wise invariant risk minimization (IRM) that efficiently tackles the challenge of missing environmental annotation in conventional IRM. State-of-the-art experimental results on real-world visual benchmarks (NICO and VIPriors ImageNet) validate the great potential of the two inductive biases in reducing training data and parameters significantly. </p>
 							</td>
