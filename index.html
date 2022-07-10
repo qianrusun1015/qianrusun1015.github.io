@@ -517,6 +517,49 @@
 				<h4> 2022 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/context_eccv22.png" alt="ECCV2022_CONTEXT" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Class Is Invariant to Context and Vice Versa: On Learning Invariance for Out-Of-Distribution Generalization </strong> <br>
+								Jiaxin Qi, Kaihua Tang, <strong>Qianru Sun</strong>, Xian-Sheng Hua, Hanwang Zhang <br>
+								European Conference on Computer Vision 2022, ECCV '22. <br>
+								<a href=" ">[paper]</a> <a href=" ">[code]</a>
+								<p> </p>
+								<p> Out-Of-Distribution generalization (OOD) is all about learning invariance against environmental changes. If the context in every class is evenly distributed, OOD would be trivial because the context can be easily removed due to an underlying principle: class is invariant to context. However, collecting such a balanced dataset is impractical. Learning on imbalanced data makes the model bias to context and thus hurts OOD. Therefore, the key to OOD is context balance.We argue that the widely adopted assumption in prior work—the context bias can be directly annotated or estimated from biased class prediction—renders the context incomplete or even incorrect. In contrast, we point out the everoverlooked other side of the above principle: context is also invariant to class, which motivates us to consider the classes (which are already labeled) as the varying environments to resolve context bias (without context labels). We implement this idea by minimizing the contrastive loss of intra-class sample similarity while assuring this similarity to be invariant across all classes. On benchmarks with various context biases and domain gaps, we show that a simple re-weighting based classifier equipped with our context estimation achieves state-of-the-art performance. We provide theoretical justifications and source code in Appendix. </p>
+							</td>
+						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/env_eccv22.png" alt="ECCV2022_ENV" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Equivariance and Invariance Inductive Bias for Learning from Insufficient Data </strong> <br>
+								Tan Wang, <strong>Qianru Sun</strong>, Sugiri Pranata, Karlekar Jayashree, Hanwang Zhang <br>
+								European Conference on Computer Vision 2022, ECCV '22. <br>
+								<a href=" ">[paper]</a> <a href=" ">[code]</a>
+								<p> </p>
+								<p> We are interested in learning robust models from insufficient data, without the need for any externally pre-trained model checkpoints. First, compared to sufficient data, we show why insufficient data renders the model more easily biased to the limited training environments that are usually different from testing. For example, if all the training "swan" samples are "white", the model may wrongly use the "white" environment to represent the intrinsic class "swan". Then, we justify that equivariance inductive bias can retain the class feature while invariance inductive bias can remove the environmental feature, leaving only the class feature that generalizes to any testing environmental changes. To impose them on learning, for equivariance, we demonstrate that any off-the-shelf contrastive-based self-supervised feature learning method can be deployed; for invariance, we propose a class-wise invariant risk minimization (IRM) that efficiently tackles the challenge of missing environmental annotation in conventional IRM. State-of-the-art experimental results on real-world visual benchmarks (NICO and VIPriors ImageNet) validate the great potential of the two inductive biases in reducing training data and parameters significantly. </p>
+							</td>
+						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/face_clustering_eccv22.png" alt="ECCV2022_FACE" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>On Mitigating Hard Clusters for Face Clustering </strong> <br>
+								Yingjie Chen, Huasong Zhong, Chong Chen, Chen Shen, Jianqiang Huang, Tao Wang, Yun Liang, <strong>Qianru Sun</strong> <br>
+								European Conference on Computer Vision 2022, ECCV '22. <br>
+								<a href=" ">[paper]</a> <a href=" ">[code]</a>
+								<p> </p>
+								<p> Face clustering is a promising way to scale up face recognition systems using large-scale unlabeled face images. It remains challenging to identify small or sparse face image clusters that we call hard clusters, which is caused by the heterogeneity, i.e., high variations in size and sparsity, of the clusters. Consequently, the conventional way of using a uniform threshold (to identify clusters) often leads to a terrible misclassification for the samples that should belong to hard clusters. We tackle this problem by leveraging the neighborhood information of samples and inferring the cluster memberships (of samples) in a probabilistic way. We introduce two novel modules, Neighborhood-Diffusion-based Density (NDDe) and Transition-Probability-based Distance (TPDi), based on which we can simply apply the standard Density Peak Clustering algorithm with a uniform threshold. Our experiments on multiple benchmarks show that each module contributes to the final performance of our method, and by incorporating them into other advanced face clustering methods, these two modules can boost the performance of these methods to a new state-of-the-art. </p>
+							</td>
+						</tr>
+
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/cvpr22_recam.png" alt="CVPR2022_ReCAM" style="max-width: 100%; height: auto;"/>
