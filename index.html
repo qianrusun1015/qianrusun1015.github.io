@@ -542,6 +542,20 @@
 
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/aaai2023.png" alt="AAAI2023_Hyper" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Online Hyperparameter Optimization for Class-Incremental Learning </strong> <br>
+								Yaoyao Liu, Yingying Li, Bernt Schiele, <strong>Qianru Sun</strong> <br>
+								Thirty-Seventh AAAI Conference on Artificial Intelligence, AAAI '23. <br>
+								<a href=" ">[paper]</a>
+								<p> </p>
+								<p> Class-incremental learning (CIL) aims to train a classification model while the number of classes increases phase-by-phase. An inherent challenge of CIL is the stability-plasticity tradeoff, i.e., CIL models should keep stable to retain old knowledge and keep plastic to absorb new knowledge. However, none of the existing CIL models can achieve the optimal tradeoff in different data-receiving settings—where typically the training-from-half (TFH) setting needs more stability, but the training-from-scratch (TFS) needs more plasticity. To this end, we design an online learning method that can adaptively optimize the tradeoff without knowing the setting as a priori. Specifically, we first introduce the key hyperparameters that influence the tradeoff, e.g., knowledge distillation (KD) loss weights, learning rates, and classifier types. Then, we formulate the hyperparameter optimization process as an online Markov Decision Process (MDP) problem and propose a specific algorithm to solve it. We apply local estimated rewards and a classic bandit algorithm Exp3 (Auer et al. 2002) to address the issues when applying online MDP methods to the CIL protocol. Our method consistently improves top-performing CIL methods in both TFH and TFS settings, e.g., boosting the average accuracy of TFH and TFS by 2.2 percentage points on ImageNet-Full, compared to the state-of-the-art (Liu et al. 2021b). </p>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/emnlp2022.png" alt="EMNLP2022_OOD" style="max-width: 100%; height: auto;"/>
 							</td>
 							<td width="75%" valign="middle">
