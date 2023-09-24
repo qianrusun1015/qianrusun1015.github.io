@@ -639,6 +639,21 @@
 				<h4> 2023 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/UDA_NIPS23.png" alt="NIPS2023_UDA" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Make the U in UDA Matter: Invariant Consistency Learning for Unsupervised Domain Adaptation </strong> <br>
+								Zhongqi Yue, Qianru Sun, Hanwang Zhang <br>
+								2023 Conference on Neural Information Processing Systems, NeurIPS '23. <br>
+								<a href="https://arxiv.org/abs/2303.09977">[paper]</a> <a href="https://github.com/fereenwong/CleanerS">[code]</a>
+								<p> </p>
+								<p> Domain Adaptation (DA) is always challenged by the spurious correlation between domain-invariant features (e.g., class identity) and domain-specific features (e.g., environment) that do not generalize to the target domain. Unfortunately, even enriched with additional unsupervised target domains, existing Unsupervised DA (UDA) methods still suffer from it. This is because the source domain supervision only considers the target domain samples as auxiliary data (e.g., by pseudo-labeling), yet the inherent distribution in the target domain—where the valuable de-correlation clues hide—is disregarded. We propose to make the U in UDA matter by giving equal status to the two domains. Specifically, we learn an invariant classifier whose prediction is simultaneously consistent with the labels in the source domain and clusters in the target domain, hence the spurious correlation inconsistent in the target domain is removed. We dub our approach “Invariant CONsistency learning” (ICON). Extensive experiments show that ICON achieves state-of-the-art performance on the classic UDA benchmarks: OFFICE-HOME and VISDA-2017, and outperforms all the conventional methods on the challenging WILDS2.0 benchmark.
+							</td>
+						</tr>
+						
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/point_iccv23.png" alt="ICCV23_Point" style="max-width: 100%; height: auto;"/>
@@ -652,6 +667,9 @@
 								<p> We tackle the data scarcity challenge in few-shot point cloud recognition of 3D objects by using a joint prediction from a conventional 3D model and a well-pretrained 2D model. Surprisingly, such an ensemble, though seems trivial, has hardly been shown effective in recent 2D-3D models. We find out the crux is the less effective training for the “joint hard samples”, which have high confidence prediction on different wrong labels, implying that the 2D and 3D models do not collaborate well. To this end, our proposed invariant training strategy, called INVJOINT, does not only emphasize the training more on the hard samples, but also seeks the invariance between the conflicting 2D and 3D ambiguous predictions. INVJOINT can learn more collaborative 2D and 3D representations for better ensemble. Extensive experiments on 3D shape classification with widely-adopted ModelNet10/40, ScanObjectNN and Toys4K, and shape retrieval with ShapeNet-Core validate the superiority of our INVJOINT. </p>
 							</td>
 						</tr>
+
+						
+						
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/ssc_cvpr23.png" alt="CVPR2023_SSC" style="max-width: 100%; height: auto;"/>
