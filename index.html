@@ -669,13 +669,27 @@
 				</div> -->
 			</div>
 			<div id="publications" class="tab-pane fade">
-				<h3> Selected Conference Publications <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">[Top Venues]</a> </h3>
+				<h3> Selected Publications <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">[Venues]</a> </h3>
 				<br>
 				
 				<h4> 2023 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
 
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/uda_nips23.png" alt="NIPS2023_UDA" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Wakening Past Concepts without Past Data: Class-Incremental Learning from Online Placebos </strong> <br>
+								Yaoyao Liu, Yingying Li, Bernt Schiele, and Qianru Sun <br>
+								2024 IEEE/CVF Winter Conference on Applications of Computer Vision, WACV '24. <br>
+								<a href="https://arxiv.org/pdf/2310.16115">[paper]</a> <a href="https://github.com/yaoyao-liu/online-placebos">[code]</a>
+								<p> </p>
+								<p> Not forgetting old class knowledge is a key challenge for class-incremental learning (CIL) when the model continuously adapts to new classes. A common technique to address this is knowledge distillation (KD), which penalizes prediction inconsistencies between old and new models. Such prediction is made with almost new class data, as old class data is extremely scarce due to the strict memory limitation in CIL. In this paper, we take a deep dive into KD losses and find that "using new class data for KD" not only hinders the model adaption (for learning new classes) but also results in low efficiency for preserving old class knowledge. We address this by "using the placebos of old classes for KD", where the placebos are chosen from a free image stream, such as Google Images, in an automatical and economical fashion. To this end, we train an online placebo selection policy to quickly evaluate the quality of streaming images (good or bad placebos) and use only good ones for one-time feed-forward computation of KD. We formulate the policy training process as an online Markov Decision Process (MDP), and introduce an online learning algorithm to solve this MDP problem without causing much computation costs. In experiments, we show that our method 1) is surprisingly effective even when there is no class overlap between placebos and original old class data, 2) does not require any additional supervision or memory budget, and 3) significantly outperforms a number of top-performing CIL methods, in particular when using lower memory budgets for old class exemplars, e.g., five exemplars per class.
+							</td>
+						</tr>
+						
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/uda_nips23.png" alt="NIPS2023_UDA" style="max-width: 100%; height: auto;"/>
