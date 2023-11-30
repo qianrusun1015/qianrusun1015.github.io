@@ -683,7 +683,19 @@
 				<h4> 2024 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
-
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/placebos_wacv24.png" alt="placebos_wacv24" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Non-Visible Light Data Synthesis and Application: A Case Study for Synthetic Aperture Radar Imagery</strong> <br>
+								Zichen Tian, Zhaozheng Chen, and Qianru Sun <br>
+								ArXiv 2311.17486, 2024. <br>
+								<a href="https://arxiv.org/abs/2311.17486">[pre-print]</a> <a href="https://github.com/doem97/gen_sar_plora">[code]</a>
+								<p> </p>
+								<p> We explore the "hidden" ability of large-scale pre-trained image generation models, such as Stable Diffusion and Imagen, in non-visible light domains, taking Synthetic Aperture Radar (SAR) data for a case study. Due to the inherent challenges in capturing satellite data, acquiring ample SAR training samples is infeasible. For instance, for a particular category of ship in the open sea, we can collect only few-shot SAR images which are too limited to derive effective ship recognition models. If large-scale models pre-trained with regular images can be adapted to generating novel SAR images, the problem is solved. In preliminary study, we found that fine-tuning these models with few-shot SAR images is not working, as the models can not capture the two primary differences between SAR and regular images: structure and modality. To address this, we propose a 2-stage low-rank adaptation method, and we call it 2LoRA. In the first stage, the model is adapted using aerial-view regular image data (whose structure matches SAR), followed by the second stage where the base model from the first stage is further adapted using SAR modality data. Particularly in the second stage, we introduce a novel prototype LoRA (pLoRA), as an improved version of 2LoRA, to resolve the class imbalance problem in SAR datasets. For evaluation, we employ the resulting generation model to synthesize additional SAR data. This augmentation, when integrated into the training process of SAR classification as well as segmentation models, yields notably improved performance for minor classes.
+							</td>
+						</tr>
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/placebos_wacv24.png" alt="placebos_wacv24" style="max-width: 100%; height: auto;"/>
