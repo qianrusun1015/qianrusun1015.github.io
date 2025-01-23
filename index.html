@@ -792,24 +792,56 @@
 			<div id="publications" class="tab-pane fade">
 				<h3> Selected Publications <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">[Venues]</a> </h3>
 				<br>
-				
-				<h4> 2024 </h4>
+
+				<h4> 2025 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
-
-						<tr>
+					      	<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/acm_survey.png" alt="acm_survey" style="max-width: 100%; height: auto;"/>
 							</td>
 							<td width="75%" valign="middle">
 								<strong>Weakly-Supervised Semantic Segmentation with Image-Level Labels: from Traditional Models to Foundation Models </strong> <br>
 								Zhaozheng Chen and Qianru Sun <br>
-								ACM Computing Surveys, 2024 (In Press) <br>
+								ACM Computing Surveys, 2025 <br>
 								<a href=" ">[data]</a> <a href="https://dl.acm.org/doi/10.1145/3707447">[paper]</a>
 								<p> </p>
 								<p> The rapid development of deep learning has driven significant progress in image semantic segmentation—a fundamental task in computer vision. Semantic segmentation algorithms often depend on the availability of pixel-level labels (i.e., masks of objects), which are expensive, time-consuming, and labor-intensive. Weakly-supervised semantic segmentation (WSSS) is an effective solution to avoid such labeling. It utilizes only partial or incomplete annotations and provides a cost-effective alternative to fully-supervised semantic segmentation. In this journal, our focus is on the WSSS with image-level labels, which is the most challenging form of WSSS. Our work has two parts. First, we conduct a comprehensive survey on traditional methods, primarily focusing on those presented at premier research conferences. We categorize them into four groups based on where their methods operate: pixel-wise, image-wise, cross-image, and external data. Second, we investigate the applicability of visual foundation models, such as the Segment Anything Model (SAM), in the context of WSSS. We scrutinize SAM in two intriguing scenarios: text prompting and zero-shot learning. We provide insights into the potential and challenges of deploying visual foundational models for WSSS, facilitating future developments in this exciting research area.
 							</td>
 						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/iclr25_comb.jpg" alt="iclr25_comb" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Frame-Voyager: Learning to Query Frames for Video Large Language Models </strong><br />
+								Sicheng Yu, Chengkai Jin,, Jiawei Wu, Hao Zhang, and Qianru Sun <br />
+								The Thirteenth International Conference on Learning Representations, ICLR'25. <br />
+								<a href="https://openreview.net/forum?id=LNL7zKvm7e">[paper]</a>
+								<p> Video Large Language Models (Video-LLMs) have made remarkable progress in video understanding tasks. However, they are constrained by the maximum length of input tokens, making it impractical to input entire videos. Existing frame selection approaches, such as uniform frame sampling and text-frame retrieval, fail to account for the information density variations in the videos or the complex instructions in the tasks, leading to sub-optimal performance. In this paper, we propose Frame-Voyager that learns to query informative frame combinations, based on the given textual queries in the task. To train Frame-Voyager, we introduce a new data collection and labeling pipeline, by ranking frame combinations using a pre-trained Video-LLM. Given a video of M frames, we traverse its T-frame combinations, feed them into a Video-LLM, and rank them based on Video-LLM's prediction losses. Using this ranking as supervision, we train Frame-Voyager to query the frame combinations with lower losses. In experiments, we evaluate Frame-Voyager on four Video Question Answering benchmarks by plugging it into two different Video-LLMs. The experimental results demonstrate that Frame-Voyager achieves impressive results in all settings, highlighting its potential as a plug-and-play solution for Video-LLMs.
+							</td>	
+						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/naacl25_reverse.jpg" alt="naacl25_reverse" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Reverse Modeling in Large Language Models </strong><br />
+								Sicheng Yu, Xu Yuanchen, Cunxiao Du,, Qianru Sun, Hao Zhang, and Jiawei Wu <br />
+								The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL, NAACL'25. <br />
+								<a href="https://arxiv.org/html/2410.09817v1">[paper]</a>
+								<p> Humans are accustomed to reading and writing in a forward manner, and this natural bias extends to text understanding in auto-regressive large language models (LLMs). This paper investigates whether LLMs, like humans, struggle with reverse modeling, specifically with reversed text inputs. We found that publicly available pre-trained LLMs cannot understand such inputs. However, LLMs trained from scratch with both forward and reverse texts can understand them equally well during inference. Our case study shows that different-content texts result in different losses if input (to LLMs) in different directions---some get lower losses for forward while some for reverse. This leads us to a simple and nice solution for data selection based on the loss differences between forward and reverse directions. Using our selected data in continued pretraining can boost LLMs' performance by a large margin for the task of Massive Multitask Language Understanding.
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+				
+				<h4> 2024 </h4>
+				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+					<tbody>
 
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
