@@ -793,6 +793,19 @@
 
 						<tr>
 							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/iccv25_cot.png" alt="iccv25_cot" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Unsupervised Visual Chain-of-Thought Reasoning via Preference Optimization </strong><br />
+								Kesen Zhao, Beier Zhu, Qianru Sun, and Hanwang Zhang <br />
+								International Conference on Computer Vision 2025, ICCV'25. <br />
+								<a href=" ">[paper]</a>
+								<p> Chain-of-thought (CoT) reasoning greatly improves the interpretability and problem-solving abilities of multimodal large language models (MLLMs). However, existing approaches are focused on text CoT, limiting their ability to leverage visual cues. Visual CoT remains underexplored, and the only work is based on supervised fine-tuning (SFT) that relies on extensive labeled bounding-box data and is hard to generalize to unseen cases. In this paper, we introduce Unsupervised Visual CoT (UV-CoT), a novel framework for image-level CoT reasoning via preference optimization. UV-CoT performs preference comparisons between model-generated bounding boxes (one is preferred and the other is dis-preferred), eliminating the need for bounding-box annotations. We get such preference data by introducing an automatic data generation pipeline. Given an image, our target MLLM (e.g., LLaVA-1.5-7B) generates seed bounding boxes using a template prompt and then answers the question using each bounded region as input. An evaluator MLLM (e.g., OmniLLM-12B) ranks the responses, and these rankings serve as supervision to train the target MLLM with UV-CoT by minimizing negative log-likelihood losses. By emulating human perception--identifying key regions and reasoning based on them--UV-CoT can improve visual comprehension, particularly in spatial reasoning tasks where textual descriptions alone fall short. Our experiments on six datasets demonstrate the superiority of UV-CoT, compared to the state-of-the-art textual and visual CoT methods. Our zero-shot testing on three unseen datasets shows the strong generalization of UV-CoT. 
+							</td>
+						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
 								<img src="paper_figure/icml25_3d.png" alt="icml25_3d" style="max-width: 100%; height: auto;"/>
 							</td>
 							<td width="75%" valign="middle">
