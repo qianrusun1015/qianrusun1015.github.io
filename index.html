@@ -787,6 +787,56 @@
 				<h3> Publications <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">[Venues]</a> </h3>
 				<br>
 
+				<h4> 2026 </h4>
+				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+					<tbody>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/iclr26_mtlora.png" alt="iclr26_mtlora" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Multi-Task Low-Rank Model Adaptation </strong><br />
+								Zichen Tian, Antoine Ledent, and Qianru Sun <br />
+								The Fourteenth International Conference on Learning Representations, ICLR'26. <br />
+								<a href=" ">[paper]</a>
+								<p> Scaling multi-task low-rank adaptation (LoRA) to a large number of tasks induces catastrophic performance degradation, such as an accuracy drop from 88.2% to 2.0% on DOTA when scaling from 5 to 15 tasks. This failure is due to parameter and representation misalignment. We find that existing solutions, like regularization and dynamic routing, fail at scale because they are constrained by a fundamental trade-off: strengthening regularization to reduce inter-task conflict inadvertently suppresses the essential feature discrimination required for effective routing. In this work, we identify two root causes for this trade-off. First, uniform regularization disrupts inter-task knowledge sharing: shared underlying knowledge concentrates in high-SV components (89% alignment on Flanv2→BBH). Uniform regularization forces high-SV components to update in orthogonal directions, directly disrupting the shared knowledge. Second, Conflict Amplification: Applying LoRA at the component-level (e.g., Wq and Wv) amplifies gradient conflicts; we show block-level adaptation reduces this conflict with 47% fewer parameters. Based on these insights, we propose mtLoRA, a scalable solution with three novel designs: 1) Spectral-Aware Regularization to selectively orthogonalize low-SV components while preserving high-SV shared knowledge, 2) Block-Level Adaptation to mitigate conflict amplification and largely improve parameter efficiency, and 3) Fine-Grained Routing using dimension-specific weights for superior expressive power. On four large-scale (15-25 tasks) vision (DOTA and iNat2018) and NLP (Dolly-15k and BBH) benchmarks, mtLoRA achieves 91.7%, 81.5%, 44.5% and 38.5% accuracy on DOTA, iNat2018, Dolly-15k and BBH respectively, outperforming the state-of-the-art by 2.3% on average while using 47% fewer parameters and 24% less training time.
+							</td>
+						</tr>
+
+						<tr>
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/iclr26_margin.png" alt="iclr26_margin" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Reducing Class-Wise Performance Disparity via Margin Regularization </strong><br />
+								Beier Zhu, Kesen Zhao, Jiequan Cui, Qianru Sun, Yuan Zhou, Xun Yang, and Hanwang Zhang <br />
+								The Fourteenth International Conference on Learning Representations, ICLR'26. <br />
+								<a href=" ">[paper]</a>
+								<p>  Deep neural networks often exhibit substantial disparities in class-wise accuracy, even when trained on class-balanced data—posing concerns for reliable deployment. While prior efforts have explored empirical remedies, a theoretical understanding of such performance disparities in classification remains limited. In this work, we present Margin Regularization for performance disparity Reduction (MR2), a theoretically principled regularization for classification by dynamically adjusting margins in both the logit and representation spaces. Our analysis establishes a novel margin-based, class-sensitive generalization bound that reveals how per-class feature variability contributes to error, motivating the use of larger margins for ''hard'' classes. Guided by this insight, MR2 optimizes per-class logit margins proportional to feature spread and penalizes excessive representation margins to enhance intra-class compactness. Experiments on seven datasets—including ImageNet—and diverse pre-trained backbones (MAE, MoCov2, CLIP) demonstrate that our MR2 not only improves overall accuracy but also significantly boosts "hard" class performance without trading off "easy" classes, thus reducing the performance disparities. Codes are available in Supplementary Materials.
+							</td>
+						<tr>
+							
+							<td style="padding:20px;width:25%;vertical-align:middle">
+								<img src="paper_figure/iclr26_diffusion.png" alt="iclr26_diffusion" style="max-width: 100%; height: auto;"/>
+							</td>
+							<td width="75%" valign="middle">
+								<strong>Real-Time Motion-Controllable Autoregressive Video Diffusion </strong><br />
+								Kesen Zhao, Kesen Zhao, Jiaxin Shi, Beier Zhu, Junbao Zhou, Xiaolong Shen, Yuan Zhou, Qianru Sun, and Hanwang Zhang  <br />
+								The Fourteenth International Conference on Learning Representations, ICLR'26. <br />
+								<a href=" ">[paper]</a>
+								<p> Real-time motion-controllable video generation remains challenging due to the inherent latency of bidirectional diffusion models and the lack of effective autoregressive (AR) approaches. Existing AR video diffusion models are limited to simple control signals or text-to-video generation, and often suffer from quality degradation and motion artifacts in few-step generation. To address these challenges, we propose AR-Drag, the first RL-enhanced few-step AR video diffusion model for real-time image-to-video generation with diverse motion control. We first fine-tune a base I2V model to support basic motion control, then further improve it via reinforcement learning with a trajectory-based reward model. Our design preserves the Markov property through a Self-Rollout mechanism and accelerates training by selectively introducing stochasticity in denoising steps. Extensive experiments demonstrate that AR-Drag achieves high visual fidelity and precise motion alignment, significantly reducing latency compared with state-of-the-art motion-controllable VDMs, while using only 1.3B parameters. 
+							</td>
+						</tr>
+						
+					   
+						
+
+					
+
+					</tbody>
+				</table>
+
 				<h4> 2025 </h4>
 				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 					<tbody>
